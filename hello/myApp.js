@@ -72,9 +72,9 @@ var showImages = function(res) {
       if ((path.extname(file).toUpperCase() == '.PNG') ||(path.extname(file).toUpperCase() == '.JPG')){   
         if(row >3){
           res.write('</div><div class="row">'); // end previous row tag and add new row
-          row = 0; // reset
+          row = 1; // reset
         }
-        res.write('<div class="col-md-4">')
+        res.write('<div class="col-sm-4">');
         var data = fs.readFileSync(file);
         // add image tag
         res.write('<img src="data:image/jpeg;base64,');
@@ -82,6 +82,8 @@ var showImages = function(res) {
         res.write('" class="center-block" style="width:65%"/>');
         res.write('</div>'); // end col tag
         row += 1; 
+        
+        
       }
     });
 
