@@ -1,6 +1,6 @@
 # Image Repository
 ## Instructions
-1. Install node.js
+1. Install node.js and download the folder 'hello'
 2. Open http://localhost:8080/ in your browser
 3. Open the command line and go to the path where the folder 'hello' is located
 4. Change path in myApp.js to your path (denoted with a '*' in comments)
